@@ -20,14 +20,15 @@ class Template {
                             '</binding>' +
                           '</visual>' +
                           '%s' +
-                          '<audio src="ms-winsoundevent:Notification.Reminder"/>' +
+                          '%s' +// original: '<audio src="ms-winsoundevent:Notification.Reminder"/>' +
                         '</toast>'
 
     options.templateText = options.templateText || '<text id="1">%s</text>'
     options.templateImage = options.templateImage || '' // eg: <image placement="AppLogoOverride" src="oneAlarm.png" />
     options.templateActions = options.templateActions || '' // eg: <actions><action content="check" arguments="check" imageUri="check.png" /></actions>
+    options.templateAudio = options.templateAudio || '<audio src="ms-winsoundevent:Notification.Default"/>'
 
-    this.template = util.format(rootTemplate, options.templateText, options.templateImage, options.templateActions)
+    this.template = util.format(rootTemplate, options.templateText, options.templateImage, options.templateActions, options.templateAudio)
   }
 
   /**
