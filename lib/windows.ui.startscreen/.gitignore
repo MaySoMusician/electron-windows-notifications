@@ -1,6 +1,8 @@
 *.vcxproj
 *.filters
 *.user
+*.sln
+config.gypi
 Debug
 Release
 test
