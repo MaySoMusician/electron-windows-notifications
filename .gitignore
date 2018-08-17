@@ -38,3 +38,4 @@ jspm_packages
 
 samples/electron/dist
 samples/electron/node_modules
+*.tlog
