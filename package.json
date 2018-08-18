@@ -33,13 +33,12 @@
     "is-electron-renderer": "^2.0.1",
     "sanitize-xml-string": "^1.1.0",
     "uuid": "^3.3.2",
-    "xml-escape": "^1.1.0"
-  },
-  "optionalDependencies": {
+    "xml-escape": "^1.1.0",
     "@nodert-win10-rs4/windows.data.xml.dom": "^0.1.0",
     "@nodert-win10-rs4/windows.foundation": "^0.1.0",
     "@nodert-win10-rs4/windows.ui.notifications": "^0.1.0",
     "windows.applicationmodel": "file:lib/windows.applicationmodel",
     "windows.ui.startscreen": "file:lib/windows.ui.startscreen"
-  }
+  },
+  "optionalDependencies": {}
 }
